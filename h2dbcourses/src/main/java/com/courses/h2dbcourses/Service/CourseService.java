@@ -64,6 +64,7 @@ public class CourseService {
         else{
             course.setCourseName(course.getCourseName());
             course.setCourseDescription(course.getCourseDescription());
+            coursesRepository.save(course);
             return course;
         }
     }
